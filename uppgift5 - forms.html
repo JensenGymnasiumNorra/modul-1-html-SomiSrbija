@@ -23,11 +23,49 @@ Se till att när man klickar på submit-knappen i formuläret så ska tack.html 
 
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>Formulär</title>
 </head>
 
 <body>
 
+    <h1>Mitt Formulär</h1>
+
+    <form action="tack.html" metod="get">
+
+        <fieldset>
+            <legend>Personlig information</legend>
+
+            <label for="namn">Namn:</label>
+            <input type="text" id="namn" name="namn" value="Milos"><br><br>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email"><br><br>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Val o intressen</legend>
+
+            <label>Kön:</label><br>
+            <input type="radio" id="man" name="kon" value="Man">
+            <label for="man">Man</label><br>
+            <input type="radio" id="kvinna" name="kon" value="Kvinna">
+            <lavel for="kvinna">Kvinna</lavel><br><br>
+
+            <label for="intresse">Intreserad av sport:</label>
+            <input type="checkbox" id="intresse" name="intresse"><br><br>
+
+            <label for="stad">Välj stad:</label>
+            <select id="stad" name="stad">
+                <option value="Stockholm">Stockholm</option>
+                <option value="Belgrad">Belgrad</option>
+                <option value="Helsingborg">Helsingborg</option>
+                <option value="Göteborg">Göteborg</option>
+            </select><br><br>
+
+            <input type="submit" value="Skicka"
+
+        </fieldset>
 </body>
 
 </html>
